@@ -1,0 +1,113 @@
+Metadata-Version: 2.1
+Name: tensorflow-datasets
+Version: 2.1.0
+Summary: tensorflow/datasets is a library of datasets ready to use with TensorFlow.
+Home-page: http://github.com/tensorflow/datasets
+Author: Google Inc.
+Author-email: packages@tensorflow.org
+License: Apache 2.0
+Download-URL: https://github.com/tensorflow/datasets/tags
+Keywords: tensorflow machine learning datasets
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: absl-py
+Requires-Dist: attrs (>=18.1.0)
+Requires-Dist: dill
+Requires-Dist: future
+Requires-Dist: numpy
+Requires-Dist: promise
+Requires-Dist: protobuf (>=3.6.1)
+Requires-Dist: requests (>=2.19.0)
+Requires-Dist: six
+Requires-Dist: tensorflow-metadata
+Requires-Dist: termcolor
+Requires-Dist: tqdm
+Requires-Dist: wrapt
+Requires-Dist: bz2file ; python_version < "3"
+Requires-Dist: functools32 ; python_version < "3"
+Requires-Dist: futures ; python_version < "3"
+Requires-Dist: psutil ; python_version < "3.3"
+Requires-Dist: enum34 ; python_version < "3.4"
+Provides-Extra: aflw2k3d
+Requires-Dist: scipy ; extra == 'aflw2k3d'
+Provides-Extra: apache-beam
+Requires-Dist: apache-beam ; extra == 'apache-beam'
+Provides-Extra: c4
+Requires-Dist: apache-beam ; extra == 'c4'
+Requires-Dist: langdetect ; extra == 'c4'
+Requires-Dist: nltk ; extra == 'c4'
+Requires-Dist: tldextract ; extra == 'c4'
+Provides-Extra: cats_vs_dogs
+Requires-Dist: matplotlib ; extra == 'cats_vs_dogs'
+Provides-Extra: colorectal_histology
+Requires-Dist: Pillow ; extra == 'colorectal_histology'
+Provides-Extra: duke_ultrasound
+Requires-Dist: scipy ; extra == 'duke_ultrasound'
+Provides-Extra: eurosat
+Requires-Dist: scikit-image ; extra == 'eurosat'
+Provides-Extra: groove
+Requires-Dist: pretty-midi ; extra == 'groove'
+Requires-Dist: pydub ; extra == 'groove'
+Provides-Extra: imagenet2012_corrupted
+Requires-Dist: opencv-python (==3.4.0.14) ; extra == 'imagenet2012_corrupted'
+Requires-Dist: scikit-image ; extra == 'imagenet2012_corrupted'
+Requires-Dist: scipy ; extra == 'imagenet2012_corrupted'
+Provides-Extra: librispeech
+Requires-Dist: pydub ; extra == 'librispeech'
+Provides-Extra: lsun
+Requires-Dist: tensorflow-io ; extra == 'lsun'
+Provides-Extra: matplotlib
+Requires-Dist: matplotlib ; extra == 'matplotlib'
+Provides-Extra: nsynth
+Requires-Dist: crepe (>=0.0.9) ; extra == 'nsynth'
+Requires-Dist: librosa ; extra == 'nsynth'
+Requires-Dist: scikit-learn (==0.20.3) ; extra == 'nsynth'
+Provides-Extra: pet_finder
+Requires-Dist: pandas ; extra == 'pet_finder'
+Provides-Extra: svhn
+Requires-Dist: scipy ; extra == 'svhn'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (>=1.15.0) ; extra == 'tensorflow'
+Provides-Extra: tensorflow_gpu
+Requires-Dist: tensorflow-gpu (>=1.15.0) ; extra == 'tensorflow_gpu'
+Provides-Extra: tests
+Requires-Dist: apache-beam ; extra == 'tests'
+Requires-Dist: jupyter ; extra == 'tests'
+Requires-Dist: mako ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-xdist ; extra == 'tests'
+Requires-Dist: scipy ; extra == 'tests'
+Requires-Dist: langdetect ; extra == 'tests'
+Requires-Dist: nltk ; extra == 'tests'
+Requires-Dist: tldextract ; extra == 'tests'
+Requires-Dist: matplotlib ; extra == 'tests'
+Requires-Dist: Pillow ; extra == 'tests'
+Requires-Dist: scikit-image ; extra == 'tests'
+Requires-Dist: pretty-midi ; extra == 'tests'
+Requires-Dist: pydub ; extra == 'tests'
+Requires-Dist: opencv-python (==3.4.0.14) ; extra == 'tests'
+Requires-Dist: pandas ; extra == 'tests'
+Requires-Dist: mwparserfromhell ; extra == 'tests'
+Requires-Dist: mock ; (python_version < "3") and extra == 'tests'
+Provides-Extra: the300w_lp
+Requires-Dist: scipy ; extra == 'the300w_lp'
+Provides-Extra: wider_face
+Requires-Dist: Pillow ; extra == 'wider_face'
+Provides-Extra: wikipedia
+Requires-Dist: mwparserfromhell ; extra == 'wikipedia'
+Requires-Dist: apache-beam ; extra == 'wikipedia'
+
+tensorflow/datasets is a library of public datasets ready to use with
+TensorFlow. Each dataset definition contains the logic necessary to download and
+prepare the dataset, as well as to read it into a model using the
+`tf.data.Dataset` API.
+
+Usage outside of TensorFlow is also supported.
+
+See the README on GitHub for further documentation.
+
+

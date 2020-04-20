@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: tensor2tensor
+Version: 1.14.1
+Summary: Tensor2Tensor
+Home-page: http://github.com/tensorflow/tensor2tensor
+Author: Google Inc.
+Author-email: no-reply@google.com
+License: Apache 2.0
+Keywords: tensorflow machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Dist: bz2file
+Requires-Dist: dopamine-rl
+Requires-Dist: flask
+Requires-Dist: future
+Requires-Dist: gevent
+Requires-Dist: gin-config
+Requires-Dist: google-api-python-client
+Requires-Dist: gunicorn
+Requires-Dist: gym
+Requires-Dist: h5py
+Requires-Dist: kfac
+Requires-Dist: mesh-tensorflow
+Requires-Dist: numpy
+Requires-Dist: oauth2client
+Requires-Dist: opencv-python
+Requires-Dist: Pillow
+Requires-Dist: pypng
+Requires-Dist: requests
+Requires-Dist: scipy
+Requires-Dist: six
+Requires-Dist: sympy
+Requires-Dist: tensorflow-datasets
+Requires-Dist: tensorflow-gan
+Requires-Dist: tensorflow-probability (==0.7.0)
+Requires-Dist: tqdm
+Provides-Extra: allen
+Requires-Dist: Pillow (==5.1.0) ; extra == 'allen'
+Requires-Dist: pandas (==0.23.0) ; extra == 'allen'
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (>=1.14.0) ; extra == 'tensorflow'
+Provides-Extra: tensorflow-hub
+Requires-Dist: tensorflow-hub (>=0.1.1) ; extra == 'tensorflow-hub'
+Provides-Extra: tensorflow_gpu
+Requires-Dist: tensorflow-gpu (>=1.14.0) ; extra == 'tensorflow_gpu'
+Provides-Extra: tests
+Requires-Dist: absl-py ; extra == 'tests'
+Requires-Dist: attrs (>=17.4.0) ; extra == 'tests'
+Requires-Dist: pytest (>=3.8.0) ; extra == 'tests'
+Requires-Dist: mock ; extra == 'tests'
+Requires-Dist: pylint ; extra == 'tests'
+Requires-Dist: jupyter ; extra == 'tests'
+Requires-Dist: matplotlib ; extra == 'tests'
+Provides-Extra: trax
+Requires-Dist: jax ; extra == 'trax'
+Requires-Dist: jaxlib ; extra == 'trax'
+
+UNKNOWN
+
+

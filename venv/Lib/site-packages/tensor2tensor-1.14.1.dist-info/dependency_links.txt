@@ -1,0 +1,1 @@
+git+https://github.com/tensorflow/cleverhans.git#egg=cleverhans

@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: tensorflow-gan
+Version: 2.0.0
+Summary: TF-GAN: A Generative Adversarial Networks library for TensorFlow.
+Home-page: http://github.com/tensorflow/gan
+Author: Google Inc.
+Author-email: packages@tensorflow.org
+License: Apache 2.0
+Keywords: tensorflow GAN generative model machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: tensorflow-hub (>=0.2)
+Requires-Dist: tensorflow-probability (>=0.7)
+Provides-Extra: tensorflow-datasets
+Requires-Dist: tensorflow-datasets (>=0.5.0) ; extra == 'tensorflow-datasets'
+Provides-Extra: tf
+Requires-Dist: tensorflow (>=1.12) ; extra == 'tf'
+
+TF-GAN is a lightweight library for training and evaluating Generative
+Adversarial Networks (GANs).
+
+See the README on GitHub for further documentation.
+
+

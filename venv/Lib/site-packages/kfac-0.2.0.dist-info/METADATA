@@ -1,0 +1,32 @@
+Metadata-Version: 2.0
+Name: kfac
+Version: 0.2.0
+Summary: K-FAC for TensorFlow
+Home-page: http://github.com/tensorflow/kfac
+Author: Google Inc.
+Author-email: no-reply@google.com
+License: Apache 2.0
+Keywords: tensorflow machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Provides-Extra: tensorflow
+Provides-Extra: tensorflow_gpu
+Provides-Extra: tests
+Requires-Dist: numpy
+Requires-Dist: six
+Requires-Dist: tensorflow-probability
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow (>=1.14); extra == 'tensorflow'
+Provides-Extra: tensorflow_gpu
+Requires-Dist: tensorflow-gpu (>=1.14); extra == 'tensorflow_gpu'
+Provides-Extra: tests
+Requires-Dist: dm-sonnet; extra == 'tests'
+Requires-Dist: pytest; extra == 'tests'
+
+UNKNOWN
+
+

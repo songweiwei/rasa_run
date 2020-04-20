@@ -1,0 +1,64 @@
+2020-04-14 15:10:03,312 [DEBUG]  CORS: Configuring CORS with resources: {'/*': {'origins': [''], 'methods': 'DELETE, GET, HEAD, OPTIONS, PATCH, POST, PUT', 'allow_headers': ['.*'], 'expose_headers': None, 'supports_credentials': False, 'max_age': None, 'send_wildcard': False, 'automatic_options': True, 'vary_header': True, 'resources': {'/*': {'origins': ''}}, 'intercept_exceptions': True, 'always_send': True}}
+2020-04-14 15:10:03,314 [DEBUG]  Available web server routes: 
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+2020-04-14 15:10:03,315 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-04-14 15:10:03,319 [INFO ]  Enabling coroutine debugging. Loop id 1904287506840.
+2020-04-14 15:10:03,642 [DEBUG]  Extracted model to 'C:\Users\Sonny\AppData\Local\Temp\tmpua7yf0s6'.
+2020-04-14 15:10:03,717 [DEBUG]  Could not load interpreter from 'models'.
+2020-04-14 15:10:03,719 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-04-14 15:10:04,018 [DEBUG]  Extracted model to 'C:\Users\Sonny\AppData\Local\Temp\tmpr1imklyy'.
+2020-04-14 15:10:04,022 [ERROR]  Could not load model due to Failed to find component class for 'rasa.nlu.featurizers.sparse_featurizer.regex_featurizer.RegexFeaturizer'. Unknown component name. Check your configured pipeline and make sure the mentioned component is not misspelled. If you are creating your own component, make sure it is either listed as part of the `component_classes` in `rasa.nlu.registry.py` or is a proper name of a class in a module..
+2020-04-14 15:10:04,024 [ERROR]  Experienced exception while trying to serve
+Traceback (most recent call last):
+  File "D:\software\aconda\lib\site-packages\rasa\nlu\registry.py", line 141, in get_component_class
+    return class_from_module_path(component_name)
+  File "D:\software\aconda\lib\site-packages\rasa\utils\common.py", line 174, in class_from_module_path
+    m = importlib.import_module(module_name)
+  File "D:\software\aconda\lib\importlib\__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 941, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 953, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'rasa.nlu.featurizers.sparse_featurizer'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\software\aconda\lib\site-packages\sanic\app.py", line 1096, in run
+    serve(**server_settings)
+  File "D:\software\aconda\lib\site-packages\sanic\server.py", line 743, in serve
+    trigger_events(before_start, loop)
+  File "D:\software\aconda\lib\site-packages\sanic\server.py", line 605, in trigger_events
+    loop.run_until_complete(result)
+  File "D:\software\aconda\lib\asyncio\base_events.py", line 473, in run_until_complete
+    return future.result()
+  File "D:\software\aconda\lib\site-packages\rasa\core\run.py", line 222, in load_agent_on_start
+    action_endpoint=endpoints.action,
+  File "D:\software\aconda\lib\asyncio\coroutines.py", line 110, in __next__
+    return self.gen.send(None)
+  File "D:\software\aconda\lib\site-packages\rasa\core\agent.py", line 264, in load_agent
+    remote_storage=remote_storage,
+  File "D:\software\aconda\lib\site-packages\rasa\core\agent.py", line 924, in load_local_model
+    remote_storage=remote_storage,
+  File "D:\software\aconda\lib\site-packages\rasa\core\agent.py", line 373, in load
+    interpreter = NaturalLanguageInterpreter.create(nlu_model)
+  File "D:\software\aconda\lib\site-packages\rasa\core\interpreter.py", line 53, in create
+    return RasaNLUInterpreter(model_directory=obj)
+  File "D:\software\aconda\lib\site-packages\rasa\core\interpreter.py", line 250, in __init__
+    self._load_interpreter()
+  File "D:\software\aconda\lib\site-packages\rasa\core\interpreter.py", line 270, in _load_interpreter
+    self.interpreter = Interpreter.load(self.model_directory)
+  File "D:\software\aconda\lib\site-packages\rasa\nlu\model.py", line 301, in load
+    return Interpreter.create(model_metadata, component_builder, skip_validation)
+  File "D:\software\aconda\lib\site-packages\rasa\nlu\model.py", line 323, in create
+    components.validate_requirements(model_metadata.component_classes)
+  File "D:\software\aconda\lib\site-packages\rasa\nlu\components.py", line 36, in validate_requirements
+    component_class = registry.get_component_class(component_name)
+  File "D:\software\aconda\lib\site-packages\rasa\nlu\registry.py", line 150, in get_component_class
+    "in a module.".format(component_name)
+Exception: Failed to find component class for 'rasa.nlu.featurizers.sparse_featurizer.regex_featurizer.RegexFeaturizer'. Unknown component name. Check your configured pipeline and make sure the mentioned component is not misspelled. If you are creating your own component, make sure it is either listed as part of the `component_classes` in `rasa.nlu.registry.py` or is a proper name of a class in a module.
