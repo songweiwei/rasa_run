@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="127e8eac-5ddc-43be-a172-816d345bec82" name="Default Changelist" comment="add" />
+    <list default="true" id="127e8eac-5ddc-43be-a172-816d345bec82" name="Default Changelist" comment="delete">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -187,7 +189,21 @@
       <option name="project" value="LOCAL" />
       <updated>1587519506879</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add">
+      <created>1587519850843</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1587519850843</updated>
+    </task>
+    <task id="LOCAL-00009" summary="delete">
+      <created>1587520333239</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1587520333239</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +216,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
@@ -207,9 +224,9 @@
     </ignored-roots>
     <MESSAGE value="安装包文件" />
     <MESSAGE value="test" />
-    <MESSAGE value="delete" />
     <MESSAGE value="add" />
-    <option name="LAST_COMMIT_MESSAGE" value="add" />
+    <MESSAGE value="delete" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587518073647">
@@ -272,10 +289,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="137" y="70" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1587519491575" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587519525620">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1587520339377">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587519525620" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1587520339377" />
     <state x="470" y="199" key="git4idea.merge.GitPullDialog" timestamp="1587519449722">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
